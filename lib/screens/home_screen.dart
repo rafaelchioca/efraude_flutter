@@ -6,14 +6,14 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.vermelho,
+        backgroundColor: Color.fromARGB(255, 100, 10, 10),
         centerTitle: true,
         title: Text(
           'Início',
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 18,
-            color: Colors.branco,
+            color: Color.fromARGB(255, 250, 249, 246),
           ),
         ),
         automaticallyImplyLeading: false,
@@ -21,14 +21,14 @@ class HomeScreen extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.exit_to_app),
             padding: EdgeInsets.only(right: 16),
-            color: Colors.branco,
+            color: Color.fromARGB(255, 250, 249, 246),
             onPressed: () {
               Navigator.of(context).pushReplacementNamed('/');
             },
           ),
         ],
       ),
-      backgroundColor: Colors.branco,
+      backgroundColor: Color.fromARGB(255, 250, 249, 246),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(

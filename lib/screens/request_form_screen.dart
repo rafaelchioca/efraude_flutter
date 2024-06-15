@@ -88,22 +88,22 @@ void _submitForm() async {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.vermelho,
+        backgroundColor: Color.fromARGB(255, 100, 10, 10),
         centerTitle: true,
         title: Text(
           'Cadastrar uma nova transação',
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 18,
-            color: Colors.branco,
+            color: Color.fromARGB(255, 250, 249, 246),
           ),
         ),
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.branco),
+          icon: Icon(Icons.arrow_back, color: Color.fromARGB(255, 250, 249, 246)),
           onPressed: () => Navigator.of(context).pop(),
         ),
       ),
-      backgroundColor: Colors.branco,
+      backgroundColor: Color.fromARGB(255, 250, 249, 246),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Form(
@@ -114,7 +114,7 @@ void _submitForm() async {
                 'Categoria da transação',
                 style: TextStyle(
                   fontSize: 16,
-                  color: Colors.preto,
+                  color: Color.fromARGB(255, 30, 30, 30),
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -122,8 +122,8 @@ void _submitForm() async {
               ItemForm(
                 controller: _categoryController,
                 hintText: 'Digite a categoria',
-                fillColor: Colors.cinza,
-                borderColor: Colors.cinza,
+                fillColor: Color.fromARGB(255, 230, 230, 230),
+                borderColor: Color.fromARGB(255, 230, 230, 230),
                 textColor: Colors.black,
                 hintColor: Colors.black54,
                 validator: (value) {
@@ -138,7 +138,7 @@ void _submitForm() async {
                 'Valor da transação',
                 style: TextStyle(
                   fontSize: 16,
-                  color: Colors.preto,
+                  color: Color.fromARGB(255, 30, 30, 30),
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -146,8 +146,8 @@ void _submitForm() async {
               ItemForm(
                 controller: _amtController,
                 hintText: 'Digite o valor',
-                fillColor: Colors.cinza,
-                borderColor: Colors.cinza,
+                fillColor: Color.fromARGB(255, 230, 230, 230),
+                borderColor: Color.fromARGB(255, 230, 230, 230),
                 textColor: Colors.black,
                 hintColor: Colors.black54,
                 keyboardType: TextInputType.numberWithOptions(decimal: true),
@@ -163,7 +163,7 @@ void _submitForm() async {
                 'Gênero',
                 style: TextStyle(
                   fontSize: 16,
-                  color: Colors.preto,
+                  color: Color.fromARGB(255, 30, 30, 30),
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -171,8 +171,8 @@ void _submitForm() async {
               ItemForm(
                 controller: _genderController,
                 hintText: 'Digite o gênero',
-                fillColor: Colors.cinza,
-                borderColor: Colors.cinza,
+                fillColor: Color.fromARGB(255, 230, 230, 230),
+                borderColor: Color.fromARGB(255, 230, 230, 230),
                 textColor: Colors.black,
                 hintColor: Colors.black54,
                 validator: (value) {
@@ -187,7 +187,7 @@ void _submitForm() async {
                 'Cidade',
                 style: TextStyle(
                   fontSize: 16,
-                  color: Colors.preto,
+                  color: Color.fromARGB(255, 30, 30, 30),
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -195,8 +195,8 @@ void _submitForm() async {
               ItemForm(
                 controller: _cityController,
                 hintText: 'Digite a cidade',
-                fillColor: Colors.cinza,
-                borderColor: Colors.cinza,
+                fillColor: Color.fromARGB(255, 230, 230, 230),
+                borderColor: Color.fromARGB(255, 230, 230, 230),
                 textColor: Colors.black,
                 hintColor: Colors.black54,
                 validator: (value) {
@@ -211,7 +211,7 @@ void _submitForm() async {
                 'Estado (UF)',
                 style: TextStyle(
                   fontSize: 16,
-                  color: Colors.preto,
+                  color: Color.fromARGB(255, 30, 30, 30),
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -219,8 +219,8 @@ void _submitForm() async {
               ItemForm(
                 controller: _stateController,
                 hintText: 'Digite o estado (UF)',
-                fillColor: Colors.cinza,
-                borderColor: Colors.cinza,
+                fillColor: Color.fromARGB(255, 230, 230, 230),
+                borderColor: Color.fromARGB(255, 230, 230, 230),
                 textColor: Colors.black,
                 hintColor: Colors.black54,
                 validator: (value) {
@@ -235,7 +235,7 @@ void _submitForm() async {
                 'Latitude',
                 style: TextStyle(
                   fontSize: 16,
-                  color: Colors.preto,
+                  color: Color.fromARGB(255, 30, 30, 30),
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -243,8 +243,8 @@ void _submitForm() async {
               ItemForm(
                 controller: _latController,
                 hintText: 'Digite a latitude',
-                fillColor: Colors.cinza,
-                borderColor: Colors.cinza,
+                fillColor: Color.fromARGB(255, 230, 230, 230),
+                borderColor: Color.fromARGB(255, 230, 230, 230),
                 textColor: Colors.black,
                 hintColor: Colors.black54,
                 keyboardType: TextInputType.numberWithOptions(decimal: true),
@@ -260,7 +260,7 @@ void _submitForm() async {
                 'Longitude',
                 style: TextStyle(
                   fontSize: 16,
-                  color: Colors.preto,
+                  color: Color.fromARGB(255, 30, 30, 30),
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -268,8 +268,8 @@ void _submitForm() async {
               ItemForm(
                 controller: _longController,
                 hintText: 'Digite a longitude',
-                fillColor: Colors.cinza,
-                borderColor: Colors.cinza,
+                fillColor: Color.fromARGB(255, 230, 230, 230),
+                borderColor: Color.fromARGB(255, 230, 230, 230),
                 textColor: Colors.black,
                 hintColor: Colors.black54,
                 keyboardType: TextInputType.numberWithOptions(decimal: true),
@@ -285,7 +285,7 @@ void _submitForm() async {
                 'População da cidade',
                 style: TextStyle(
                   fontSize: 16,
-                  color: Colors.preto,
+                  color: Color.fromARGB(255, 30, 30, 30),
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -293,8 +293,8 @@ void _submitForm() async {
               ItemForm(
                 controller: _cityPopController,
                 hintText: 'Digite a população da cidade',
-                fillColor: Colors.cinza,
-                borderColor: Colors.cinza,
+                fillColor: Color.fromARGB(255, 230, 230, 230),
+                borderColor: Color.fromARGB(255, 230, 230, 230),
                 textColor: Colors.black,
                 hintColor: Colors.black54,
                 keyboardType: TextInputType.number,
@@ -310,7 +310,7 @@ void _submitForm() async {
                 'Cargo',
                 style: TextStyle(
                   fontSize: 16,
-                  color: Colors.preto,
+                  color: Color.fromARGB(255, 30, 30, 30),
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -318,8 +318,8 @@ void _submitForm() async {
               ItemForm(
                 controller: _jobController,
                 hintText: 'Digite o cargo',
-                fillColor: Colors.cinza,
-                borderColor: Colors.cinza,
+                fillColor: Color.fromARGB(255, 230, 230, 230),
+                borderColor: Color.fromARGB(255, 230, 230, 230),
                 textColor: Colors.black,
                 hintColor: Colors.black54,
                 validator: (value) {
@@ -334,7 +334,7 @@ void _submitForm() async {
                 'Unix Time',
                 style: TextStyle(
                   fontSize: 16,
-                  color: Colors.preto,
+                  color: Color.fromARGB(255, 30, 30, 30),
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -342,8 +342,8 @@ void _submitForm() async {
               ItemForm(
                 controller: _unixTimeController,
                 hintText: 'Digite o Unix Time',
-                fillColor: Colors.cinza,
-                borderColor: Colors.cinza,
+                fillColor: Color.fromARGB(255, 230, 230, 230),
+                borderColor: Color.fromARGB(255, 230, 230, 230),
                 textColor: Colors.black,
                 hintColor: Colors.black54,
                 keyboardType: TextInputType.number,
@@ -359,7 +359,7 @@ void _submitForm() async {
                 'Latitude do Estabelecimento',
                 style: TextStyle(
                   fontSize: 16,
-                  color: Colors.preto,
+                  color: Color.fromARGB(255, 30, 30, 30),
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -367,8 +367,8 @@ void _submitForm() async {
               ItemForm(
                 controller: _merchLatController,
                 hintText: 'Digite a latitude do estabelecimento',
-                fillColor: Colors.cinza,
-                borderColor: Colors.cinza,
+                fillColor: Color.fromARGB(255, 230, 230, 230),
+                borderColor: Color.fromARGB(255, 230, 230, 230),
                 textColor: Colors.black,
                 hintColor: Colors.black54,
                 keyboardType: TextInputType.numberWithOptions(decimal: true),
@@ -384,7 +384,7 @@ void _submitForm() async {
                 'Longitude do Estabelecimento',
                 style: TextStyle(
                   fontSize: 16,
-                  color: Colors.preto,
+                  color: Color.fromARGB(255, 30, 30, 30),
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -392,8 +392,8 @@ void _submitForm() async {
               ItemForm(
                 controller: _merchLongController,
                 hintText: 'Digite a longitude do estabelecimento',
-                fillColor: Colors.cinza,
-                borderColor: Colors.cinza,
+                fillColor: Color.fromARGB(255, 230, 230, 230),
+                borderColor: Color.fromARGB(255, 230, 230, 230),
                 textColor: Colors.black,
                 hintColor: Colors.black54,
                 keyboardType: TextInputType.numberWithOptions(decimal: true),
@@ -412,13 +412,13 @@ void _submitForm() async {
                   child: Text(
                     'CADASTRAR',
                     style: TextStyle(
-                      color: Colors.branco,
+                      color: Color.fromARGB(255, 250, 249, 246),
                       fontWeight: FontWeight.bold,
                       fontSize: 16,
                     ),
                   ),
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.preto,
+                    backgroundColor: Color.fromARGB(255, 30, 30, 30),
                     padding: EdgeInsets.symmetric(vertical: 16.0),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(8.0),

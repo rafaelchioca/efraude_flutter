@@ -84,22 +84,22 @@ class _ListScreenState extends State<ListScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.vermelho,
+        backgroundColor: Color.fromARGB(255, 100, 10, 10),
         centerTitle: true,
         title: Text(
           'Análise de transação',
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 18,
-            color: Colors.branco,
+            color: Color.fromARGB(255, 250, 249, 246),
           ),
         ),
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.branco),
+          icon: Icon(Icons.arrow_back, color: Color.fromARGB(255, 250, 249, 246)),
           onPressed: () => Navigator.of(context).pop(),
         ),
       ),
-      backgroundColor: Colors.branco,
+      backgroundColor: Color.fromARGB(255, 250, 249, 246),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
@@ -110,7 +110,7 @@ class _ListScreenState extends State<ListScreen> {
                 'Filtro por ID da transação',
                 style: TextStyle(
                   fontSize: 16,
-                  color: Colors.preto,
+                  color: Color.fromARGB(255, 30, 30, 30),
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -122,8 +122,8 @@ class _ListScreenState extends State<ListScreen> {
                   child: ItemForm(
                     controller: _transactionIdController,
                     hintText: 'Digite o ID da transação',
-                    fillColor: Colors.cinza,
-                    borderColor: Colors.cinza,
+                    fillColor: Color.fromARGB(255, 230, 230, 230),
+                    borderColor: Color.fromARGB(255, 230, 230, 230),
                     textColor: Colors.black,
                     hintColor: Colors.black54,
                   ),
@@ -135,10 +135,10 @@ class _ListScreenState extends State<ListScreen> {
                   child: ElevatedButton(
                     onPressed: () =>
                         fetchTransactionById(_transactionIdController.text),
-                    child: Icon(Icons.search, color: Colors.branco, size: 30),
+                    child: Icon(Icons.search, color: Color.fromARGB(255, 250, 249, 246), size: 30),
                     style: ElevatedButton.styleFrom(
                       padding: EdgeInsets.all(16.0),
-                      backgroundColor: Colors.preto,
+                      backgroundColor: Color.fromARGB(255, 30, 30, 30),
                       shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(10.0),
                       ),
@@ -154,7 +154,7 @@ class _ListScreenState extends State<ListScreen> {
                 'Transações',
                 style: TextStyle(
                   fontSize: 16,
-                  color: Colors.preto,
+                  color: Color.fromARGB(255, 30, 30, 30),
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -182,7 +182,7 @@ class _ListScreenState extends State<ListScreen> {
                                 );
                               },
                               child: Card(
-                                color: Colors.vermelho,
+                                color: Color.fromARGB(255, 100, 10, 10),
                                 margin: EdgeInsets.symmetric(
                                     vertical: 8, horizontal: 2),
                                 shape: RoundedRectangleBorder(
@@ -203,21 +203,21 @@ class _ListScreenState extends State<ListScreen> {
                                             '${transaction['city'] ?? ''}, ${transaction['state'] ?? ''}',
                                             style: TextStyle(
                                                 fontSize: 16,
-                                                color: Colors.branco),
+                                                color: Color.fromARGB(255, 250, 249, 246)),
                                           ),
                                           SizedBox(height: 4),
                                           Text(
                                             transaction['category'] ?? '',
                                             style: TextStyle(
                                                 fontSize: 16,
-                                                color: Colors.branco),
+                                                color: Color.fromARGB(255, 250, 249, 246)),
                                           ),
                                         ],
                                       ),
                                       Text(
                                         'R\$ ${transaction['amt'] != null ? NumberFormat('#,##0.00', 'pt_BR').format(transaction['amt']) : ''}',
                                         style: TextStyle(
-                                            fontSize: 16, color: Colors.branco),
+                                            fontSize: 16, color: Color.fromARGB(255, 250, 249, 246)),
                                       ),
                                     ],
                                   ),

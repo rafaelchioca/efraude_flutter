@@ -24,8 +24,8 @@ class itemHomeScreen extends StatelessWidget {
           Navigator.pushNamed(context, routeName);
         },
         style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.vermelho,
-          foregroundColor: Colors.branco,
+          backgroundColor: Color.fromARGB(255, 100, 10, 10),
+          foregroundColor: Color.fromARGB(255, 250, 249, 246),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12.0),
           ),

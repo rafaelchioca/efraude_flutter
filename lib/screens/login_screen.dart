@@ -37,7 +37,7 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.vermelho,
+      backgroundColor: Color.fromARGB(255, 100, 10, 10),
       body: Center(
         child: SingleChildScrollView(
           child: Padding(
@@ -60,7 +60,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       fontSize: 24,
-                      color: Colors.branco,
+                      color: Color.fromARGB(255, 250, 249, 246),
                     ),
                   ),
                   SizedBox(height: 40),
@@ -68,16 +68,16 @@ class _LoginScreenState extends State<LoginScreen> {
                     'E-mail',
                     style: TextStyle(
                       fontSize: 16,
-                      color: Colors.branco,
+                      color: Color.fromARGB(255, 250, 249, 246),
                     ),
                   ),
                   SizedBox(height: 8),
                   ItemForm(
                     controller: _emailController,
                     hintText: 'Digite o e-mail',
-                    fillColor: Colors.vermelho50,
-                    borderColor: Colors.vermelho50,
-                    textColor: Colors.branco,
+                    fillColor: Color.fromARGB(255, 82, 24, 24),
+                    borderColor: Color.fromARGB(255, 82, 24, 24),
+                    textColor: Color.fromARGB(255, 250, 249, 246),
                     hintColor: Colors.white70,
                     validator: (value) {
                       if (value == null || value.isEmpty) {
@@ -91,16 +91,16 @@ class _LoginScreenState extends State<LoginScreen> {
                     'Senha',
                     style: TextStyle(
                       fontSize: 16,
-                      color: Colors.branco,
+                      color: Color.fromARGB(255, 250, 249, 246),
                     ),
                   ),
                   SizedBox(height: 8),
                   ItemForm(
                     controller: _passwordController,
                     hintText: 'Digite a senha',
-                    fillColor: Colors.vermelho50,
-                    borderColor: Colors.vermelho50,
-                    textColor: Colors.branco,
+                    fillColor: Color.fromARGB(255, 82, 24, 24),
+                    borderColor: Color.fromARGB(255, 82, 24, 24),
+                    textColor: Color.fromARGB(255, 250, 249, 246),
                     hintColor: Colors.white70,
                     obscureText: true,
                     validator: (value) {
@@ -118,13 +118,13 @@ class _LoginScreenState extends State<LoginScreen> {
                       child: Text(
                         'ENTRAR',
                         style: TextStyle(
-                          color: Colors.branco,
+                          color: Color.fromARGB(255, 250, 249, 246),
                           fontWeight: FontWeight.bold,
                           fontSize: 16,
                         ),
                       ),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.preto,
+                        backgroundColor: Color.fromARGB(255, 30, 30, 30),
                         padding: EdgeInsets.symmetric(vertical: 16.0),
                         shape: RoundedRectangleBorder(
                           borderRadius: BorderRadius.circular(10.0),

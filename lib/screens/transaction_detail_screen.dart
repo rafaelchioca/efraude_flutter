@@ -46,22 +46,22 @@ class _TransactionDetailScreenState extends State<TransactionDetailScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.vermelho,
+        backgroundColor: Color.fromARGB(255, 100, 10, 10),
         centerTitle: true,
         title: Text(
           'Detalhes da transação',
           style: TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 18,
-            color: Colors.branco,
+            color: Color.fromARGB(255, 250, 249, 246),
           ),
         ),
         leading: IconButton(
-          icon: Icon(Icons.arrow_back, color: Colors.branco),
+          icon: Icon(Icons.arrow_back, color: Color.fromARGB(255, 250, 249, 246)),
           onPressed: () => Navigator.of(context).pop(),
         ),
       ),
-      backgroundColor: Colors.branco,
+      backgroundColor: Color.fromARGB(255, 250, 249, 246),
       body: isLoading
           ? Center(child: CircularProgressIndicator())
           : Padding(

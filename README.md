@@ -25,7 +25,7 @@ Para começar a desenvolver com o projeto, siga estas etapas:
 2. Navegue até o diretório do projeto:
 
     ```bash
-    cd projeto-fraude-transacao
+    cd efraude_flutter
     ```
 
 3. Instale as dependências:
